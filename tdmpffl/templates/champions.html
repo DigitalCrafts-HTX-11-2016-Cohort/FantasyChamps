@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/static/css/champions.css">
+{% endblock %}
+
+{% block body_top %}
+    <h1 id="championsheader">CHAMPIONS</h1>
+{%  endblock %}
+
+{% block body %}
+    <div>
+    {% set video_id= range(1, 7)|random %}
+    <video style="opacity:0.8" autoplay loop>
+        <source src="/static/tdmpfflvideo{{ video_id }}.mp4" type="video/mp4">
+    </video>
+    <div class="opacity">
+    </div>
+<div class="container-fluid">
+
+    <div style="margin-top: 110px;" class="row">
+        <div class="col-xs-12 col-md-4" id="championspic">
+            <img style="border-radius:5%;height:210px;width:118px;" src="/static/images/champions/brian3.png" alt="brian">
+            <h1>Brian</br>Broussard</h1>
+            <h2>2016</h2>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4" id="championspic">
+            <img src="/static/images/champions/brian1.png" alt="brian">
+            <h1>Brian</br>Broussard</h1>
+            <h2>2015</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4" id="championspic">
+            <img src="/static/images/champions/brian2.png" alt="brian">
+            <h1>Brian</br>Broussard</h1>
+            <h2>2014</h2>
+        </div>
+            </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" id="championspic">
+            <img src="/static/images/champions/dustin1.jpeg" alt="dustin">
+            <h1>Dustin</br>Williams</h1>
+            <h2>2013</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4" id="championspic">
+            <img src="/static/images/champions/zane1.png" alt="zane">
+            <h1>Zane</br>Grant</h1>
+            <h2>2012</h2>
+        </div>
+        <div class="col-xs-12 col-md-4" id="championspic">
+            <img src="/static/images/champions/johnny1.jpeg" alt="johnny">
+            <h1>Jonathan</br>Meier</h1>
+            <h2>2011</h2>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+

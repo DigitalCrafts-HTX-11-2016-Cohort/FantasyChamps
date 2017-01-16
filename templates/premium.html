@@ -1,0 +1,40 @@
+{% extends "landing.html" %}
+
+{% block body %}
+<p class="top5"> Please Register below for the Premium Addess:
+</p>
+
+<form action="/register" method="POST">
+    <p>
+   <label class="main-text" for="firstname">First Name: &nbsp;</label><input type="text" name="firstname">
+   &nbsp; &nbsp; &nbsp;
+   <label class="main-text" for="lastname">Last Name: &nbsp;</label><input type="text" name="lastname"><br /><br />
+  <label class="main-text" for="username">Username:&nbsp; </label> <input type="text" name="username">
+   &nbsp; &nbsp; &nbsp;
+   <label class="main-text" for="password">Password:&nbsp; </label><input type="password" name="password"><br /><br />
+    <label class="main-text"  for="leaguesite">League Site: (ie NFL.com, ESPN, Yahoo) &nbsp;</label><br>
+    <input type="text" name="leaguesite"><br /><br />
+    <label class="main-text"  for="leagueID">League Id: &nbsp;</label><input type="text" name="leagueID">
+    &nbsp; &nbsp; &nbsp;
+    <label class="main-text" for="leaguename">League Name: &nbsp;</label><input type="text" name="leaguename">
+    <p>
+      <button type="submit">Register </button>
+    </p>
+</form>
+
+<form action="/charge" method="post">
+    <article>
+      <label class="main-text">
+        <span>Amount is $5.00</span>
+      </label>
+    </article>
+
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{ key }}"
+            data-description="A Flask Charge"
+            data-amount="500"
+            data-locale="auto"></script>
+  </form>
+
+
+{% endblock %}

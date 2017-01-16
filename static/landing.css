@@ -1,0 +1,294 @@
+@font-face {
+	src: url('https://fonts.googleapis.com/css?family=Arimo');
+	src: url('https://fonts.googleapis.com/css?family=Holtwood+One+SC');
+
+}
+
+.welcome {
+	padding-top: 15px;
+	padding-left: 5px;
+}
+
+video {
+	position:absolute;
+    left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+}
+
+.opacity    {
+
+    position: absolute;
+    background-color: black;
+    opacity: .6;
+    left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+}
+
+body {
+    text-align: center;
+	font-family: 'Arimo', sans-serif;
+}
+/*Navbar settings*/
+
+.logonav:hover {
+    cursor:default;
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbar {
+    background: white;
+    height: 50px;
+    margin-bottom: 0px !important;
+}
+
+.nav
+{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item:
+{
+    float: left;
+    *display:inline;
+    zoom:1;
+}
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-align: center;
+	font-size: 14px;
+}
+
+.nav-item a:hover,{
+    color:white;
+    text-decoration: none;
+}
+
+.nav >li {
+	width: 150px !important;
+}
+
+ul.sub-menu {
+    display: none;
+    padding-left: 0px;
+    background: white;
+	list-style: none;
+}
+
+.sub-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover .sub-menu {
+	display: block;
+}
+ a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #0285C9;
+}
+
+/*Body block settings*/
+.bodyblock {
+	text-align: center;
+	padding-top: 250px;
+	font-size: 22px;
+	font-family: 'Arimo', sans-serif;
+}
+.top5 {
+	font-family: 'Holtwood One SC', serif;
+	color: #0285C9;
+	font-size: 26px;
+	text-align: center;
+	font-style: italic;
+}
+
+.top {
+	font-family: 'Holtwood One SC', serif;
+	color: #0285C9;
+	font-size: 40px;
+	font-style: italic;
+	text-align: center;
+	text-decoration: underline;
+
+}
+
+#center {
+    left: 17%;
+}
+.main-text {
+	color: white;
+	font-size: 22px;
+	align-items: center;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#logo {
+    align-items: baseline;
+}
+
+.menu-bar:img {
+	display: none;
+}
+
+.menu-bar {
+	display: none;
+}
+
+/* Table settings for the team tables and such */
+
+.standings {
+	text-align: center;
+	table-layout: fixed;
+	white-space: nowrap;
+    /*margin-top: 125px;*/
+    width: 60%;
+}
+
+.standings td {
+	/*color:white;*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    font-size: 22px;
+}
+.standings th   {
+    /*color:white;*/
+    font-size: 30px;
+    text-align: center;
+}
+/* Column widths are based on these cells */
+.row-owner {
+  width: 50%;
+}
+.row-win {
+  width: 15%;
+}
+.row-loss {
+  width: 15%;
+}
+.row-percent {
+  width: 20%;
+}
+.row-team {
+  width: 50%;
+}
+.row-teamstart {
+  width: 25%;
+}
+.row-teamend {
+  width: 25%;
+}
+.tableheader    {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+
+/*Mobile and break point settings*/
+@media only screen and (max-width: 1170px) {
+.week {
+	display: none;
+	}
+	.bodyblock {
+		font-size: 16px;
+		padding-top: 150px;
+
+	}
+	.main-text{
+		font-size: 16px;
+
+	}
+	.top {
+		font-size: 30px;
+	}
+	.top5 .standings{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 775px) {
+    /* For mobile phones: */
+	body {
+		background-image: url("/static/mobilebackground1.jpg");
+	}
+	video {
+		display: none !important;
+	}
+	.top {
+		font-size: 30px;
+	}
+	.top5 .standings th{
+		font-size: 16px;
+	}
+	.navbar {
+		display: none;
+	}
+	.menu-bar:img {
+		display: inline;
+		align-items: center;
+	}
+	.menu-bar:img:hover {
+		display: inline;
+		background: white;
+	}
+	.menu-bar {
+		/*padding-top: 450px;*/
+		display: block;
+	    position: absolute;
+	    top: 20px;
+	    left: 50%;
+	    height: 14px;
+	    margin-left: -10px;
+	}
+
+	.row {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.menu {
+	    display: none;
+	    width: 100%;
+		padding-top: 90px;
+	    /*padding: 30px 10px 50px;*/
+	    margin: 0 auto;
+	    text-align: center;
+	    background-color: #fff;
+	}
+	.menu ul {
+	    margin-bottom: 0;
+		padding: 0px;
+	}
+	ul {
+		padding-left: 0px;
+	}
+	.menu a {
+	    color: #333;
+	    text-transform: uppercase;
+	    opacity: 0.8;
+	}
+	.menu a:hover {
+	    text-decoration: none;
+	    opacity: 1;
+		background-color: white;
+	}
+
+}

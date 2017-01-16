@@ -1,0 +1,34 @@
+{% extends "landing.html" %}
+
+
+{% block body_top %}
+
+<h1>{{title}}</h1>
+
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12 standings" style="margin-top: 100px;">
+        <table>
+    <tr>
+    <th class="tableheader">Team</th>
+    <th class="tableheader">Start</th>
+    <th class="tableheader">End</th>
+    </tr>
+                {% for owner in team_names %}
+    <tr class="standings">
+        <td class="row-team">{{ owner.teamname }}</td>
+        <td class="row-yearstart">{{ owner.yearstarted }}</td>
+        <td class="row-yearend">{{ owner.yearended }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+    </div>
+</div>
+</div>
+
+{% endblock %}

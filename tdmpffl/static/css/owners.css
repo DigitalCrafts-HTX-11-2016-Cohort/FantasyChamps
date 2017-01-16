@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    padding-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+h1  {
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.tableheader    {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+table    {
+    margin-top: 110px;
+
+}
+.members    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.standings {
+    text-align: center;
+  table-layout: fixed;
+  white-space: nowrap;
+    width: 100%;
+    color: white;
+}
+.standings td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    font-size: 25px;
+}
+
+/* Column widths are based on these cells */
+.row-team {
+  width: 50%;
+}
+.row-teamstart {
+  width: 25%;
+}
+.row-teamend {
+  width: 25%;
+}

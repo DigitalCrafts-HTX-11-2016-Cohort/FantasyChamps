@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    padding-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+h1  {
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#center {
+    left: 17%;
+}
+
+.standings {
+    text-align: center;
+  table-layout: fixed;
+  white-space: nowrap;
+    margin-top: 125px;
+    width: 60%;
+}
+.standings td {
+    color:white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    font-size: 22px;
+}
+.standings th   {
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+/* Column widths are based on these cells */
+.row-owner {
+  width: 50%;
+}
+.row-win {
+  width: 15%;
+}
+
+.row-loss {
+  width: 15%;
+}
+.row-percent {
+  width: 20%;
+}

@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block customstyle %}
+<link rel="stylesheet" href="/../static/css/standings.css">
+{% endblock %}
+
+{% block body_top %}
+{%  endblock %}
+
+{% block body %}
+    <div>
+    {% set video_id= range(1, 7)|random %}
+    <video style="opacity:0.8" autoplay loop>
+        <source src="../static/tdmpfflvideo{{ video_id }}.mp4" type="video/mp4">
+    </video>
+    <div class="opacity">
+    </div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12" id="center">
+
+
+
+    <table style="margin-top: 150px;" class="standings">
+
+    <tr>
+        <th class="row-1 row-team">Team</th>
+        <th class="row-2 row-owner">Owner</th>
+        <th class="row-4 row-win">Win</th>
+        <th class="row-5 row-loss">Loss</th>
+    </tr>
+    {% for owner in result_list %}
+    <tr>
+        <td>{{ owner.team }}</td>
+        <td>{{ owner.owner }}</td>
+        <td>{{ owner.wins }}</td>
+        <td>{{ owner.loss }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+

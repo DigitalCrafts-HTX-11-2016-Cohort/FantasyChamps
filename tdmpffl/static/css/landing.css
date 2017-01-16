@@ -1,0 +1,199 @@
+video {
+	position:absolute;
+    left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+}
+.text{
+    position: relative;
+    top: 75px;
+    text-align: center;
+	color: #fff;
+	font-size: 3.5em;
+	font-family: 'Amaranth', sans-serif;
+
+}
+.opacity    {
+    position: absolute;
+    background-color: black;
+    opacity: .6;
+    left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+
+}
+
+body {
+    text-align: center;
+}
+#logobig    {
+    height:250px;
+    width:323px;
+}
+.logopadding    {
+    padding-top:100px;
+}
+#scores {
+    color: white;
+    font-size: 2em;
+}
+/*.logonav    {*/
+    /*background-color: white;*/
+/*}*/
+.logonav:hover {
+    cursor:default;
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out 0s;
+}
+.navbar {
+    background: white;
+    height: 50px;
+    margin-bottom: 0px !important;
+}
+
+.nav
+{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.nav-item:
+{
+    float: left;
+    *display:inline;
+    zoom:1;
+}
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-align: center;
+}
+
+.nav-item a:hover,{
+    color:white;
+    text-decoration: none;
+}
+
+ul.sub-menu {
+    display: none;
+    padding-left: 0px;
+    background: white;
+}
+
+.sub-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover .sub-menu {
+display:block;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #0285C9;
+}
+ul, ol {
+    list-style: none;
+}
+
+
+#logo {
+    align-items: baseline;
+}
+
+@media only screen and (max-width: 1170px) {
+.week {
+	display: none;
+}
+.bodyblock {
+	font-size: 16px;
+	padding-top: 150px;
+
+}
+.main-text{
+	font-size: 16px;
+
+}
+.top {
+	font-size: 30px;
+}
+.top5 {
+	font-size: 16px;
+}
+}
+    /* For mobile phones: */
+@media only screen and (max-width: 775px) {
+	body {
+		background-image: url("/static/images/TDMPFFL.png");
+
+	}
+	video {
+		display: none !important;
+	}
+
+	.navbar {
+		display: none;
+	}
+	.menu-bar:img {
+		display: inline;
+		align-items: center;
+	}
+	.menu-bar:img:hover {
+		display: inline;
+		background: white;
+	}
+	.menu-bar {
+		/*padding-top: 450px;*/
+		display: block;
+	    position: absolute;
+	    top: 20px;
+	    left: 50%;
+	    height: 14px;
+	    margin-left: -10px;
+	}
+
+	.row {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.menu {
+	    display: none;
+	    width: 100%;
+		padding-top: 90px;
+	    /*padding: 30px 10px 50px;*/
+	    margin: 0 auto;
+	    text-align: center;
+	    background-color: #fff;
+	}
+	.menu ul {
+	    margin-bottom: 0;
+		padding: 0px;
+	}
+	ul {
+		padding-left: 0px;
+	}
+	.menu a {
+	    color: #333;
+	    text-transform: uppercase;
+	    opacity: 0.8;
+	}
+	.menu a:hover {
+	    text-decoration: none;
+	    opacity: 1;
+		background-color: white;
+	}
+
+}
+
+
