@@ -2,12 +2,15 @@
 <a href="www.fantasychamps.xyz">Live Demo</a>
 
 <b>Overview:</b><p>
-<p>Fantasy Champs is the go to site for getting your fantasy information. It can be the current week results or even the win loss ratio for each individual team for the entire lifetime of the league. There are two levels for Fantasy Champs: free and premium. Free will get you basic statistics where you can see simple things such as the highest score for the season (and lowest) and your win loss ratios. Premium is for the more serious leagues that have multiple games going at once. This will get you a custom league logo made buy us, your own template for your site, more detialed stats. Do you want to know how many times you've played a particular team and your win loss ratio against them? You got it! What about those that have different team names, find out how long a team played in the league and how many name a person has used. 
+<p>Fantasy Champs is the go to site for getting your fantasy information. It can be the current week results or even the win loss ratio for each individual team for the entire lifetime of the league. Your typical fantasy sites will only show current seasons information. But what if you wanted to know who has the highest win (or loss) ratio in the entire duration of the league? 
 
-We used a Trello board to keep on track and to understand who was working on what/when. This keps us organized and was able to make us realize where we were in the project and how it was coming along. 
+There are two levels for Fantasy Champs: free and premium. Free will get you basic statistics where you can see simple things such as the highest score for the season (and lowest) and your win loss ratios. Premium is for the more serious leagues that have multiple games going at once. This will get you a custom league logo, your own template for your site and more detialed stats. Do you want to know how many times you've played a particular team and your win loss ratio against them? You got it! What about those that have different team names, find out how long a specific team played in the league and the owner. 
 
 
-<b>The Backbones of Fantasy Champs:</b>
+<p><b>The Backbones of Fantasy Champs:</b></p>
+
+<p>We used a Trello board to keep on track and to understand who was working on what/when. This kept us organized and we were able to keep track of where we were in the project and what we needed to focus on each day. </p>
+
 <ul><li>Python</li>
 <li>HTML</li>
 <li>CSS</li>
